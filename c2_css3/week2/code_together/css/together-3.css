@@ -1,0 +1,75 @@
+/* v. 25/10/17 */
+
+/*  
+New version: CSS3 - week2
+*/
+
+body
+{
+	background: #B3B3B3;
+	font-size: 200%;
+	margin: 4%
+	/* elements are more centred in the screen: more beautiful */
+	display: inline-block;
+}
+
+header
+{
+	background: #666666;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+section
+{
+	/* 
+	We don't write 33% so we have some spaces for margin, padding, border etc.
+	If we write 33%, our sections become too big and one of them go down.
+	*/
+	width: 30%;
+	/* Allow our sections to be displayed next each other and take width and height */
+	display: inline-block;
+	/* Make our sections "float" at the top left of the page */
+	float: left;
+	margin: 1%;
+}
+
+h1
+{
+	color: #FFFFFF;
+}
+
+nav
+{
+	font-variant: small-caps;
+	font-size: 150%;
+	font-family: Arial, "Time New Roman", serif;
+}
+
+h2
+{
+	color: #666666;
+	background: #00B7EA;
+}
+
+details
+{
+	font-style: italic;
+}
+
+summary
+{
+	font-style: normal;
+}
+
+footer{
+	background: #666666;
+	/* 
+	Specifies on which sides of an element floating elements are not allowed to float
+	*/
+	clear: both;
+}
+
+img{
+	width: 5%;
+}

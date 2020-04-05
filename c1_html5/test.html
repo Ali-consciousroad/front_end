@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Language of the page -->
+<head>
+	<meta charset="UTF-8">
+	<title>My First Page</title>
+
+
+	<!-- 1st way to add style: directly in the code -->
+	
+	
+	<style>
+		h1
+		{
+			color: green;
+			background-color: yellow;
+		}
+		p
+		{
+			color: yellow;
+		}
+	</style>
+	
+	
+	
+	<!-- 2nd way and best way: external style sheet -->
+	
+	
+	<link rel="stylesheet" href="css/externalStyle.css">
+	
+
+</head>
+	<link rel="icon" type="image/png" href= "http://img.freeflagicons.com/thumb/flag_with_flagpole/iran/iran_640.png" />
+	<!-- This picture will be put near the title, in the tab -->
+	<!-- here an absolute reference is used for the picture -->
+</head>
+<body>
+
+	<!-- <h1 style = "color:green">Hello Everybody</h1> -->
+
+
+	<a href = "http://www.intro-webdesign.com">Learn Accessible Web Design</a>!!
+
+
+	<h1>Important heading</h1>
+	<h2>Less important heading</h2>
+	<h3>Even less one</h3>
+	This should be displayed by the browser. 
+
+
+	<a href = "http://www.presstv.ir">
+		<img src = "iran_640.png"
+		alt = "Iran Flag"/>
+	</a>
+	<!-- Here, the link is an image -->
+
+	<!-- ordered list -->
+	<ol> 
+		<li>First one</li>
+		<li>Second one</li>
+		<li>Third one</li>
+	</ol>
+
+	<!-- unordered list -->
+	<ul>
+		<li>pomme</li>
+		<li>poire</li>
+		<li>framboise</li>
+	</ul>
+
+
+	<figure>
+		<img src = "comfort_zone.jpg" 
+			 alt = "Image about comfort zone">
+		<figcaption>Default image size</figcaption>
+	</figure>
+	<!-- The browser will adapt the hight automatically the height -->
+	<figure>
+		<img src = "comfort_zone.jpg" 
+			 alt = "Image about comfort zone"
+			 width = "200px" alt = "My pic">
+		<figcaption>Set image size</figcaption>
+	</figure>
+
+	<!-- Not always do what we want -->
+
+	<figure>
+		<img src = "comfort_zone.jpg" 
+			 alt = "Image about comfort zone"
+			 width = "200px" height ="50px" = "My pic">
+		<figcaption>Set image size</figcaption>
+	</figure>
+
+
+	<figure>
+		<img src = "comfort_zone.jpg" 
+			 alt = "Image about comfort zone"
+			 width = "20%">
+		<!-- Means20% of what the image should be depending of the container but don't necesseraly means 20% of the image. The picture will be "responsive". --> 
+		<figcaption>Set image size</figcaption>
+	</figure>
+
+	<h1>Video</h1>
+	<video 
+		src = "myvideo.mp4#t=10"
+		width ="400"
+		loop
+		controls>
+		Your browser does not support the <code>video</code>
+	</video>
+	<!-- Tag .ext above doesn't work :( -->
+		<!-- Don't forget to write the "controls" tag especially if you use "loop" or "controls" 
+
+	<!-- Simple Table -->
+	<!-- Table with heading -->
+	<table>
+		<tr><th>Row one</th><th>Row two</th><th>Row three</th></tr>
+		<tr><td>One</td><td>Two</td><td>Three</td></tr>
+		<tr><td>Four</td><td>Five</td><td>Six</td></tr>
+		<tr><td>Seven</td><td>Eight</td><td>Nine</td></tr>
+	</table>
+
+	<!-- Spanning multiple cells -->
+	<!-- Usually we don't use html for styling but "border" tag is very often used -->
+	<table border = "1">
+		<tr><th>Child's Name:</th><th>Parent's Name:</th></tr>
+		<tr>
+			<td rowspan ="2">Ali</td><td>Shohreh</td>
+		</tr>
+		<tr>
+			<td>Mohammad</td>
+		</tr>
+		<tr>
+			<td rowspan ="2">Estelle</td><td>Maribelle</td>
+		</tr>
+		<tr>
+			<td>Guy</td>
+		</tr>
+		<tr>
+		<td>Jesus</td><td>Marie</td>
+		</tr>
+	</table>
+
+	<!-- Draw an horizontal row with no text-->
+	<hr>
+
+	<!-- Semantic block : allow screenreaders to find easily our address-->
+	<address> 
+	Rue de la Vallée n°6<br>
+	1340 Ottignie-Lln<br>
+	Belgique
+	</address>
+
+	<!-- For quotes, we can also use  -->
+	<blockquote cite= "Napolean Hill">
+	"If you cannot do great things, do small things in a great way." <br>
+	Napolean Hill
+	</blockquote>
+
+		<!-- -->
+	<details>
+		<!-- what will be displayed -->
+		<summary>Copyright</summary>
+		<p>Yo yo yo!</p>
+	</details>
+
+	<p style = "color:#0000FF">
+		This a paragraph. 		This a paragraph.		This a paragraph. 		This a paragraph.		This a paragraph. 		This a paragraph.		This a paragraph. 		This a paragraph.		This a paragraph. 		This a paragraph.
+	</p>
+
+	<p> Now the second one </p>
+
+	<!-- Generic tag -> Try to use semantic tag instead -->
+	<div>
+		This one is in the gerenic section div.
+	</div>
+</body>
+</html>

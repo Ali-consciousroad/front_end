@@ -1,0 +1,82 @@
+
+/* Color names work but should be avoided in favor of Hexa / rgb / rgba  */
+
+body
+{
+	background: #F3AEAE;
+	font-size: 200%;
+	margin: 4%;
+}
+
+header
+{
+	background: #E35858; 
+	text-align: center;
+	padding: 15px;
+}
+
+h1
+{
+	color: #FFFFFF;
+}
+
+nav a
+{
+	width: 22%; 
+	/* links are inline so we can't give them width and height! */
+	/* => we have to add display: inline-block; or the code beyond will not work properly */
+	display: inline-block;
+	background: #FFFFFF;
+}
+
+nav
+{
+	font-variant: small-caps;
+	/* font-size: 100%; */
+	/* Not all fon-families supported by all of the operating systems
+	=> Provide alternatives is a good idea */
+	font-family: Arial, "Time New Roman", sans-serif;
+}
+
+h2
+{
+	color: #666666;
+	background: #00B7EA;
+}
+
+.half
+{
+	width: 45%;
+	margin-right: 2%
+	display: inline-block;
+	float: left;
+}
+
+.whole
+{
+	clear: both;
+}
+
+
+details
+{
+	font-style: italic;
+}
+
+summary
+{
+	font-style: normal;
+}
+
+footer
+{
+	backrground: #666666;
+	clear: both; 
+}
+
+img
+{
+	width: 75px;
+}
+
+

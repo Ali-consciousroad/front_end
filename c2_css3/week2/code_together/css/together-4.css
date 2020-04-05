@@ -1,0 +1,124 @@
+/* v4. 28/10/17 */
+
+/*  
+New version: CSS3 - week2
+*/
+
+body
+{
+	background: #B3B3B3;
+	font-size: 200%;
+	margin: 4%
+	/* elements are more centred in the screen: more beautiful */
+	display: inline-block;
+}
+
+header
+{
+	background: #666666;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+/* The style we be applied both on the header and the footer */
+header, footer{
+	/* 
+	The comma allows us to style 2 elements at once.
+	
+	
+	This background color #666666 will by applied if the linear-gradient can not be applied
+	We notice that it doesn't apply to the footer that's because at the bottom of the page
+	we have an other rule that has priority over this one.
+	
+	If we want that this rule to be applied to the footer, we have to delete the rule 
+	for the footer at the bottom of the page.
+	*/
+	
+	background: #666666;
+	/* linear-gradient color */
+	background: -moz-linear-gradient(top, #666666 0%, #00b7ea 100%);
+	background: -webkit-linear-gradient(#666666 0%, #00b7ea 100%);
+	background: -o-linear-gradient(#666666 0%, #00b7ea 100%);
+	background: linear-gradient(#666666 0%, #00b7ea 100%); 
+}
+
+/*
+We add a class to some section  ".half class" so we apply style on the selected one.
+
+To do this, we have to create the write the class on the html file.
+*/
+
+
+	/* We change our width from 33% -> 45% so we have two sections at the top and one
+	at the bottom */
+	
+	/* Because the float attribute is used, the bottom section will not be displayed 
+	   correctly
+	   => We create a new class with "clear: both;" attribute.
+	   */
+	   .half{
+	   	width: 45%;
+	   	/* Allow our sections to be displayed next each other and take width and height */
+	   	display: inline-block;
+	   	/* Make our sections "float" at the top left of the page */
+	   	float: left;
+	   	margin: 1%;
+	   }
+
+	   .whole{
+	   	clear:both;
+	   }
+      
+	   h1
+	   {
+	   	color: #FFFFFF;
+	   }
+
+	   nav
+	   {
+	   	font-variant: small-caps;
+	   	font-size: 50%;
+	   	font-family: Arial, "Time New Roman", serif;
+	   }
+
+	   nav a{
+	/*
+	Links are inline elements
+	- We can't give them width and hight!
+	- We have to transform them in "inline-block" elements
+	*/
+	background-color: #FFFFFF;
+	width: 22%;
+	display: inline-block;
+	
+}
+
+h2
+{
+	color: #666666;
+	background: #00B7EA;
+}
+
+details
+{
+	font-style: italic;
+}
+
+summary
+{
+	font-style: normal;
+}
+
+footer{
+	/*
+	background: #666666;
+	*/
+	/* 
+	Specifies on which sides of an element floating elements are not allowed to float
+	*/
+	clear: both;
+}
+
+img{
+	width: 5%;
+}

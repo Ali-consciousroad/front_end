@@ -1,0 +1,117 @@
+body
+{
+	background-image: url("beige.png");
+}
+
+
+h1, p
+{
+    text-align: center;
+}
+
+
+h1 /* Liens par défaut (non survolés) */
+{
+	
+	
+	/*
+	border-top: 3px red solid;
+	border-bottom: 3px red solid;
+	*/
+
+	text-align: center;
+	font-size: 2.5em;	/* Taille relative de 2.5em */
+}
+
+h1:hover /* Apparence au survol des liens */
+{
+	color: red;
+
+	/*
+	border-top: 3px green solid;
+	border-bottom: 3px green solid;
+	*/
+
+	text-align: center;
+	font-size: 2.5em;	/* Taille relative de 2.5em */
+}
+
+img
+{
+	float: right;
+	border: 1px black solid;
+	box-shadow: 2px 2px 2px black;
+}
+
+
+h2
+{
+	color: red;
+}
+
+.imagefloat
+{
+	float: right;
+	clear:;
+}
+
+
+.introduction
+{
+	/* "clear: both" va en fait ici permettre que cette classe 
+	   ne se trouve ni à droite ni à gauche de la photo 
+	   sans devoir utiliser de multiples /br ; */
+
+
+	clear: both;
+	color: green;
+	border: 3px red outset;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px black;
+}
+
+.below
+{
+	clear: both;
+}
+
+.comportement
+{
+	color: #e61515 /* red */;
+}
+
+p
+{
+	font-size: large;
+	font-family: "Arial Black", Arial, Verdana, sans-serif;
+}
+
+a /* Liens par défaut (non survolés) */
+{
+	text-decoration: underline;
+	color: green;
+	font-style: oblique
+	
+}
+
+a:hover 
+{
+	text-decoration: underline;
+	color: yellow;
+	font-style: oblique
+}
+
+.flex-container 
+{
+	display: -webkit-flex;
+	display: flex;
+	display: width: 400px<²²;
+	display: height: 2500px;
+
+
+}
+
+.header
+{
+	clear: both;
+}

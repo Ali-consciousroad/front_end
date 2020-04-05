@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Modify the DOM</title>
+</head>
+<body>
+	<h1>Modify the DOM</h1>
+		<!-- 
+		* We do not use function here 
+		* innerHTML does not work with parenthesis but need values to be assigned 
+		-->
+
+		<!-- Display "Clicked First Button" when the "First" button is clicked -->
+		<button onclick="document.getElementById('stuff').innerHTML = 'Clicked First Button';">First</button>
+
+		<!-- Display "Clicked Second Button" when the "Second" button is clicked -->
+		<button onclick="document.getElementById('stuff').innerHTML = 'Clicked Second Button';">Second</button>
+
+	<p>This code shouldn't change.</p>
+	<p>This will not change.</p>
+	<p id="stuff">This will change</p>
+</body>
+</html>
+
+

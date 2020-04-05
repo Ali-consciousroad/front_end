@@ -1,0 +1,53 @@
+
+body
+{
+	background-image: url("css/beige.png");
+	background-color: #F3AEAE;		/* S'applique sur l'arrière-plan */
+
+	color: white;					/* S'applique sur le texte */
+}
+
+h1
+{
+	border-top: 3px red solid;
+	border-bottom: 3px red solid;
+
+	
+
+	text-align: center;
+	font-size: 2.5em;	/* Taille relative de 2.5em */
+}
+
+h2
+{
+	color: red;
+}
+
+/* Le style sera appliqué uniquement à la balise .imagefloat */
+.imagefloat
+{
+	float: left;
+}
+
+.introduction
+{
+	/* "clear: both" va en fait ici permettre que cette classe 
+	   ne se trouve ni à droite ni à gauche de la photo 
+	   sans devoir utiliser de multiples /br ; */
+	clear: both;
+	color: blue;
+	/* super-propriété "border"*/
+	border: 3px red outset;
+}
+
+.comportement
+{
+	color: red;
+}
+
+p
+{
+	font-size: large;
+	font-family: "Arial Black", Arial, Verdana, sans-serif;
+}
+

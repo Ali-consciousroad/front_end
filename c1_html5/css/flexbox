@@ -1,0 +1,15 @@
+/* Feuille de style */
+ul
+{
+    list-style-type: none;
+}
+
+#conteneur
+{
+  display: flex;
+}
+
+p
+{
+  justify
+}

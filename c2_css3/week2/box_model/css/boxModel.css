@@ -1,0 +1,45 @@
+/*Can you:
+  1) Put these divs next to each other
+  	-Make the screen smaller, still working?
+  2) Make them taller?
+  3) Can you now center them under each other?
+*/
+
+h2{
+	text-align: center;
+}
+
+div{
+	background-color: #0000CC;
+	color:#ffffff;
+	box-sizing:border-box;
+ 
+	/*
+	Writting width with % instead of px will allow our website 
+	adapt to screen 
+	*/
+	width: 40%;
+	/*width:200px;*/
+	/* 
+	- display is "block" by default  
+	- the "inline-block" attribute will allow us to put these 2 divs next to each other
+	*/
+	
+	/*
+	display:inline-block;
+	*/
+	
+	/*
+	height: 200px;
+	2) Make them taller
+	*/
+	height: 250px;
+	margin:5px;
+	border: 20px solid #000000;
+	padding: 15px;
+	/* 
+	3) "auto" attribute will center the element relative to its parent 
+	*/
+  margin:auto;
+	margin-top: 50px;
+}
